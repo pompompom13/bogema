@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Богема – кальян-бар на набережной Академика Туполева</title>
+<meta name="description" content="Кальян-бар «Богема»: хрустальные люстры, граффити, кальяны, пицца и чай. Кино и матчи на проекторе, PlayStation 5. Наб. Академика Туполева, 15Б. +7 (965) 229-82-89">
+<meta name="theme-color" content="#0f0c0c">
+<meta property="og:title" content="Богема – кальян-бар">
+<meta property="og:description" content="Хрусталь, граффити и мягкие диваны. Наб. Академика Туполева, 15Б">
+<meta property="og:image" content="img/photo-26.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.className += ' js';
+  try { if (localStorage.getItem('bogema-age') === 'yes') document.documentElement.className += ' age-ok'; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Богема",
+  "telephone": "+79652298289",
+  "address": {"@type": "PostalAddress", "streetAddress": "наб. Академика Туполева, 15Б", "addressLocality": "Москва", "addressCountry": "RU"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 55.760986, "longitude": 37.682002},
+  "openingHours": ["Mo-Th 12:00-24:00", "Fr 12:00-02:00", "Sa 14:00-02:00", "Su 14:00-24:00"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "203"}
+}
+</script>
+</head>
+<body>
+
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age__box gilt">
+    <div class="age__in">
+      <img src="img/mono.svg" alt="Богема" class="age__mono" width="72" height="80">
+      <div id="ageAsk">
+        <p class="age__title" id="ageTitle">Вам уже есть 18?</p>
+        <p class="age__text">На&nbsp;сайте есть информация о&nbsp;кальянах и&nbsp;алкоголе, поэтому он&nbsp;только для взрослых гостей.</p>
+        <div class="age__btns">
+          <button type="button" class="btn btn--gold" id="ageYes">Да, мне есть 18</button>
+          <button type="button" class="btn btn--line" id="ageNo">Нет</button>
+        </div>
+      </div>
+      <div id="ageDeny" hidden>
+        <p class="age__title">Будем ждать вас позже</p>
+        <p class="age__text">К&nbsp;сожалению, сайт доступен только совершеннолетним.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="top" id="top">
+  <div class="top__in">
+    <a href="#top" class="top__logo" aria-label="Богема – наверх"><img src="img/wordmark.svg" alt="BOGEMA" width="1150" height="170"></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#about">О месте</a>
+      <a href="#gallery">Экспозиция</a>
+      <a href="#hookah">Кальяны</a>
+      <a href="#menu">Меню</a>
+      <a href="#leisure">Досуг</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79652298289" class="nav__phone">+7 (965) 229-82-89</a>
+    </nav>
+    <a href="tel:+79652298289" class="top__phone">+7 (965) 229-82-89</a>
+    <button class="burger" id="burger" aria-label="Меню навигации" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <picture class="hero__bg">
+    <source media="(max-width: 700px)" srcset="img/photo-26.webp">
+    <img src="img/photo-25.webp" alt="Зал «Богемы»: бархатные диваны, кожаные честерфилды и граффити на стене" fetchpriority="high">
+  </picture>
+  <div class="hero__in">
+    <p class="status" id="status">Кальян-бар</p>
+    <h1 class="hero__logo"><img src="img/logo.svg" alt="Богема" width="1150" height="603"></h1>
+    <p class="hero__lead">Хрусталь, граффити и&nbsp;мягкие диваны. Приходите на&nbsp;кальян, останьтесь на&nbsp;кино.</p>
+    <div class="hero__actions">
+      <a href="tel:+79652298289" class="btn btn--gold">Забронировать стол</a>
+      <a href="#menu" class="btn btn--line">Меню</a>
+    </div>
+    <a class="hero__rating" href="https://yandex.ru/maps/org/bogema/239536314537/reviews/" target="_blank" rel="noopener">
+      <b>5,0</b><span class="stars" aria-hidden="true">★★★★★</span><span>203 оценки · Хорошее место 2026</span>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about__grid">
+    <div class="about__text reveal">
+      <p class="label">О месте</p>
+      <h2 class="h2">Барокко, которое <em>не&nbsp;боится улицы</em></h2>
+      <span class="tag tag--about" aria-hidden="true">street</span>
+      <p class="lead">Хрустальные люстры над граффити, бархат рядом с&nbsp;кожей честерфилд. Здесь красиво, но&nbsp;без пафоса.</p>
+      <ul class="chips">
+        <li>Кино и&nbsp;матчи на&nbsp;проекторе</li>
+        <li>PlayStation 5</li>
+        <li>Розетки у&nbsp;каждого места</li>
+        <li>Wi-Fi</li>
+        <li>Можно с&nbsp;собакой до&nbsp;35&nbsp;см</li>
+        <li>Пицца навынос и&nbsp;доставка</li>
+      </ul>
+    </div>
+    <div class="about__pics">
+      <figure class="gilt gilt--tall reveal"><img src="img/photo-26.webp" alt="Барная стойка из подсвеченного оникса, хрустальная люстра и арки с кальянами" loading="lazy" width="960" height="1280"></figure>
+      <figure class="gilt gilt--small reveal"><img src="img/photo-19.webp" alt="Диваны у барной стойки с арками" loading="lazy" width="960" height="1280"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="gallery__head reveal">
+      <p class="label label--dark">Экспозиция</p>
+      <h2 class="h2 h2--dark">Каждая стена здесь –<br><em>повод остановиться</em></h2>
+      <span class="tag tag--gallery" aria-hidden="true">трогать можно</span>
+    </div>
+    <div class="exhibits">
+      <figure class="exhibit exhibit--wide reveal">
+        <div class="gilt"><img src="img/photo-18.webp" alt="Картина: Дарт Вейдер в папском облачении на стене с граффити" loading="lazy" width="1280" height="853"></div>
+        <figcaption class="plate"><span>Экспонат №1</span><b>Понтифик тёмной стороны</b><i>Холст, спрей, чувство юмора</i></figcaption>
+      </figure>
+      <figure class="exhibit reveal">
+        <div class="gilt"><img src="img/photo-20.webp" alt="Картина с ангелами и баскетбольное кольцо с золотой цепью" loading="lazy" width="960" height="1280"></div>
+        <figcaption class="plate"><span>Экспонат №2</span><b>Ангелы. Трёхочковый</b><i>Масло, кольцо, золотая цепь</i></figcaption>
+      </figure>
+      <figure class="exhibit reveal">
+        <div class="gilt"><img src="img/photo-22.webp" alt="Синий жираф держит лампу" loading="lazy" width="853" height="1280"></div>
+        <figcaption class="plate"><span>Экспонат №3</span><b>Жираф, который держит свет</b><i>Синий лак, лампа Эдисона</i></figcaption>
+      </figure>
+      <figure class="exhibit reveal">
+        <div class="gilt"><img src="img/photo-17.webp" alt="Хрустальные люстры под потолком" loading="lazy" width="853" height="1280"></div>
+        <figcaption class="plate"><span>Экспонат №4</span><b>Хрусталь над дымом</b><i>Люстры, свечи, вечер</i></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- HOOKAH -->
+<section class="hookah" id="hookah">
+  <div class="wrap hookah__grid">
+    <div class="hookah__text">
+      <p class="label reveal">Кальяны</p>
+      <h2 class="h2 reveal">Крепость, <em>как вы&nbsp;просили</em></h2>
+      <p class="lead reveal">Мягкая тяга и&nbsp;точный вкус. Угли меняем раньше, чем вы&nbsp;о&nbsp;них вспомните.</p>
+      <ul class="hk">
+        <li class="reveal"><div><b>Классический</b><span>На чаше. Дымно, мягко, без сюрпризов.</span></div><em>1&#8239;500&nbsp;₽</em></li>
+        <li class="reveal"><div><b>Сигарный лист</b><span>Для тех, кто любит глубже и&nbsp;крепче.</span></div><em>1&#8239;900&nbsp;₽</em></li>
+        <li class="reveal"><div><b>На фрукте</b><span>Чаша из&nbsp;фрукта. Сочно и&nbsp;красиво.</span></div><em>2&#8239;100&nbsp;₽</em></li>
+      </ul>
+    </div>
+    <figure class="gilt hookah__pic reveal"><img src="img/photo-23.webp" alt="Кальян на столе, на фоне люстры и фильм на проекторе" loading="lazy" width="960" height="1280"></figure>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="menu__head reveal">
+      <p class="label label--dark">Меню</p>
+      <h2 class="h2 h2--dark">Пицца, чай <em>и&nbsp;бар</em></h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Разделы меню">
+      <button role="tab" class="tab is-active" aria-selected="true" data-tab="pizza">Пицца</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="tea">Чай</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="bar">Бар</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="coffee">Кофе и&nbsp;лимонады</button>
+    </div>
+    <div class="menu__body" id="menuBody" aria-live="polite"></div>
+    <p class="menu__note">Цены в&nbsp;рублях. Наличие подскажет официант или администратор по&nbsp;телефону <a href="tel:+79652298289">+7&nbsp;(965)&nbsp;229-82-89</a>.</p>
+  </div>
+</section>
+
+<!-- LEISURE -->
+<section class="leisure" id="leisure">
+  <div class="wrap">
+    <div class="leisure__head reveal">
+      <p class="label">Досуг</p>
+      <h2 class="h2">Вечер <em>под ваш сценарий</em></h2>
+    </div>
+    <div class="acts">
+      <article class="act reveal">
+        <span class="act__n">I</span>
+        <h3>Кино и&nbsp;спорт</h3>
+        <p>Проектор на&nbsp;всю стену. Финалы, сериалы, любимые фильмы.</p>
+      </article>
+      <article class="act reveal">
+        <span class="act__n">II</span>
+        <h3>PlayStation&nbsp;5</h3>
+        <p>Большой телевизор и&nbsp;приставка. Реванш за&nbsp;вами.</p>
+      </article>
+      <article class="act reveal">
+        <span class="act__n">III</span>
+        <h3>Праздники</h3>
+        <p>День рождения, корпоратив или деловая встреча. Подготовим зал и&nbsp;кальяны к&nbsp;нужному часу.</p>
+      </article>
+      <figure class="act act--photo reveal">
+        <img src="img/photo-21.webp" alt="Диджей за пультом в «Богеме»" loading="lazy" width="1280" height="854">
+        <figcaption>Иногда за&nbsp;пультом диджей. Тогда вечер точно затянется.</figcaption>
+      </figure>
+    </div>
+    <div class="leisure__cta reveal">
+      <p>Расскажите, что празднуете, а&nbsp;мы&nbsp;подготовим зал.</p>
+      <a href="tel:+79652298289" class="btn btn--gold">Обсудить праздник</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews__head reveal">
+      <div>
+        <p class="label label--dark">Отзывы</p>
+        <h2 class="h2 h2--dark">Нам ставят <em>пять</em></h2>
+      </div>
+      <div class="score">
+        <b>5,0</b>
+        <span><span class="stars" aria-hidden="true">★★★★★</span>187 отзывов · 203 оценки<br>Хорошее место 2026 на&nbsp;Яндекс Картах</span>
+      </div>
+    </div>
+    <div class="quotes">
+      <figure class="q q--big reveal">
+        <blockquote>Бармены здесь – волшебники: тяга мягче моего кота, угли меняют чаще, чем я&nbsp;обновляю ленту.</blockquote>
+        <figcaption><b>Карина Сатарова</b><span>13 июня</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Интерьер просто шикарный, удобные кресла и&nbsp;диваны, обслуживание на&nbsp;высшем уровне. По&nbsp;ощущениям, как будто пришли в&nbsp;супердорогое модное заведение в&nbsp;центре.</blockquote>
+        <figcaption><b>Физули И.</b><span>4 сентября 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Кальян получился именно таким, как просили: вкусный, дымный и&nbsp;с&nbsp;отличным балансом крепости.</blockquote>
+        <figcaption><b>Виктория З.</b><span>18 июля</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Есть большой экран для просмотра финалов футбольных матчей. Пицца просто 5&nbsp;баллов из&nbsp;5!</blockquote>
+        <figcaption><b>Павел Иванов</b><span>17 марта</span></figcaption>
+      </figure>
+    </div>
+    <a href="https://yandex.ru/maps/org/bogema/239536314537/reviews/" target="_blank" rel="noopener" class="more">Все отзывы на&nbsp;Яндекс Картах&nbsp;→</a>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="wrap contacts__grid">
+    <div class="reveal">
+      <p class="label">Контакты</p>
+      <h2 class="h2">Ждём <em>на&nbsp;Туполева</em></h2>
+      <dl class="info">
+        <div><dt>Адрес</dt><dd>Москва, наб. Академика Туполева, 15Б<span class="sub">м. Бауманская · 1,6 км</span></dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79652298289">+7 (965) 229-82-89</a></dd></div>
+        <div><dt>Оплата</dt><dd>Карта, наличные, перевод</dd></div>
+      </dl>
+      <ul class="week" id="week" aria-label="Часы работы"></ul>
+      <div class="contacts__actions">
+        <a href="tel:+79652298289" class="btn btn--gold">Позвонить</a>
+        <a href="https://yandex.ru/maps/org/bogema/239536314537/" target="_blank" rel="noopener" class="btn btn--line">Построить маршрут</a>
+      </div>
+      <p class="access">Вход доступен для гостей на&nbsp;коляске, рядом есть парковка для людей с&nbsp;инвалидностью.</p>
+    </div>
+    <div class="map reveal">
+      <iframe title="Богема на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=37.682002%2C55.760986&z=16&pt=37.682002%2C55.760986%2Cpm2rdl" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <img src="img/logo.svg" alt="Богема" class="footer__logo" loading="lazy">
+    <nav class="footer__nav" aria-label="Разделы">
+      <a href="#about">О месте</a><a href="#hookah">Кальяны</a><a href="#menu">Меню</a><a href="#leisure">Досуг</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="footer__meta">
+      <a href="tel:+79652298289">+7 (965) 229-82-89</a>
+      <span>наб. Академика Туполева, 15Б</span>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© Богема</span>
+    <span>18+ · Информация на&nbsp;сайте носит справочный характер и&nbsp;не&nbsp;является рекламой. Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a href="tel:+79652298289">Позвонить</a>
+  <a href="#menu">Меню</a>
+  <a href="https://yandex.ru/maps/org/bogema/239536314537/" target="_blank" rel="noopener">Маршрут</a>
+</div>
+
+<script src="menu.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
